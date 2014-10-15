@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Credentials</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <title>Create - Credentials</title>
+    <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -18,7 +18,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Credentials", "Create", "Users", null, new { @class = "navbar-brand" })
+                <a class="navbar-brand" href="/">Credentials</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -28,14 +28,19 @@
     </div>
 
     <div class="container body-content">
-        @RenderBody()
+
+
+        <h2>Error</h2>
+
+        <p>Something went wrong.</p>
+
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Credentials <a href="https://github.com/guillermocorrea/adminus" class="btn btn-default"><i class="fa fa-github"></i> source code</a></p>
+            <p>&copy; 2014 - Credentials <a href="https://github.com/guillermocorrea/adminus" class="btn btn-default"><i class="fa fa-github"></i>source code</a></p>
         </footer>
     </div>
 
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
 </body>
 </html>

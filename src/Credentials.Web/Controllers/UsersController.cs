@@ -67,7 +67,9 @@ namespace Credentials.Web.Controllers
 
                 this._userRepository.Add(user);
                 this._userRepository.Save();
-                return View(new User());
+
+                ViewBag.error = "Credentials inserted correctly.";
+                user = new User();
             }
 
             return View(user);
