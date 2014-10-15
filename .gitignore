@@ -183,4 +183,3 @@ UpgradeLog*.htm
 FakesAssemblies/
 
 # nuget packages
-src/Adminus/packages
