@@ -1,0 +1,1211 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ZAP Scanning Report</title>
+</head>
+<body text="#000000">
+<p>
+<strong>ZAP Scanning Report</strong>
+</p>
+<p>
+
+</p>
+<p>
+<strong>Summary of Alerts</strong>
+</p>
+<table width="45%" border="0">
+<tr bgcolor="#666666">
+<td width="45%" height="24"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Risk 
+      Level</font></strong></td><td width="55%" align="center"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Number 
+      of Alerts</font></strong></td>
+</tr>
+<tr bgcolor="#e8e8e8">
+<td><font size="2" face="Arial, Helvetica, sans-serif"><a href="#high">High</a></font></td><td align="center"><font size="2" face="Arial, Helvetica, sans-serif">0</font></td>
+</tr>
+<tr bgcolor="#e8e8e8">
+<td><font size="2" face="Arial, Helvetica, sans-serif"><a href="#medium">Medium</a></font></td><td align="center"><font size="2" face="Arial, Helvetica, sans-serif">1</font></td>
+</tr>
+<tr bgcolor="#e8e8e8">
+<td><font size="2" face="Arial, Helvetica, sans-serif"><a href="#low">Low</a></font></td><td align="center"><font size="2" face="Arial, Helvetica, sans-serif">11</font></td>
+</tr>
+<tr bgcolor="#e8e8e8">
+<td><font size="2" face="Arial, Helvetica, sans-serif"><a href="#info">Informational</a></font></td><td align="center"><font size="2" face="Arial, Helvetica, sans-serif">9</font></td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<p>
+<strong>Alert Detail</strong>
+</p>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="orange" height="24">
+<td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><a name="medium"></a>Medium (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Application Error disclosure</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">This page contains an error/warning message that may disclose sensitive information like the location of the file that produced the unhandled exception. This information can be used to launch further attacks against the web application.The alert could be a false positive if the error message is found inside a documentation page.</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Errors?aspxerrorpath=/</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">Parameter</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">N/A</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">Attack</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">HTTP 500 Internal server error</font></td>
+</tr>
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Review the source code of this page</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify"></p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>CWE Id</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">200</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>WASC Id</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">13</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="yellow" height="24">
+<a name="low"></a><td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">X-Content-Type-Options header missing</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.</p>
+<p align="justify">This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type.</p>
+<p align="justify">Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p>
+<p align="justify">If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify"></p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="yellow" height="24">
+<a name="low"></a><td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">X-Content-Type-Options header missing</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.</p>
+<p align="justify">This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type.</p>
+<p align="justify">Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Content/Site.css</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p>
+<p align="justify">If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify"></p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="yellow" height="24">
+<a name="low"></a><td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">X-Content-Type-Options header missing</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.</p>
+<p align="justify">This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type.</p>
+<p align="justify">Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Content/font-awesome.min.css</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p>
+<p align="justify">If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify"></p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="yellow" height="24">
+<a name="low"></a><td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">X-Content-Type-Options header missing</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.</p>
+<p align="justify">This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type.</p>
+<p align="justify">Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Content/bootstrap.min.css</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p>
+<p align="justify">If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify"></p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="yellow" height="24">
+<a name="low"></a><td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">X-Content-Type-Options header missing</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.</p>
+<p align="justify">This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type.</p>
+<p align="justify">Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Scripts/modernizr-2.6.2.js</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p>
+<p align="justify">If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify"></p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="yellow" height="24">
+<a name="low"></a><td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">X-Content-Type-Options header missing</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.</p>
+<p align="justify">This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type.</p>
+<p align="justify">Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Scripts/jquery-1.10.2.min.js</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p>
+<p align="justify">If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify"></p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="yellow" height="24">
+<a name="low"></a><td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">X-Content-Type-Options header missing</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.</p>
+<p align="justify">This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type.</p>
+<p align="justify">Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Scripts/jquery.validate.min.js</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p>
+<p align="justify">If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify"></p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="yellow" height="24">
+<a name="low"></a><td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">X-Content-Type-Options header missing</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.</p>
+<p align="justify">This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type.</p>
+<p align="justify">Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Scripts/jquery.validate.unobtrusive.min.js</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p>
+<p align="justify">If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify"></p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="yellow" height="24">
+<a name="low"></a><td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">X-Content-Type-Options header missing</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.</p>
+<p align="justify">This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type.</p>
+<p align="justify">Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Scripts/bootstrap.min.js</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p>
+<p align="justify">If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify"></p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="yellow" height="24">
+<a name="low"></a><td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Content-Type header missing</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Content-Type header missing</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Ensure each page is setting the specific and appropriate content-type value for the content being delivered</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="yellow" height="24">
+<a name="low"></a><td width="20%" valign="top"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Low (Warning)</font></strong></td><td width="80%"><strong><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">X-Content-Type-Options header missing</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'.</p>
+<p align="justify">This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type.</p>
+<p align="justify">Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Errors?aspxerrorpath=/</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.</p>
+<p align="justify">If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify"></p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="blue" height="24">
+<td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><a name="info"></a>Informational (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">X-Frame-Options header not set</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Content/Site.css</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.  ALLOW-FROM allows specific websites to frame the web page in supported web browsers).</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true</p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="blue" height="24">
+<td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><a name="info"></a>Informational (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">X-Frame-Options header not set</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Content/font-awesome.min.css</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.  ALLOW-FROM allows specific websites to frame the web page in supported web browsers).</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true</p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="blue" height="24">
+<td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><a name="info"></a>Informational (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">X-Frame-Options header not set</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Content/bootstrap.min.css</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.  ALLOW-FROM allows specific websites to frame the web page in supported web browsers).</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true</p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="blue" height="24">
+<td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><a name="info"></a>Informational (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">X-Frame-Options header not set</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Scripts/modernizr-2.6.2.js</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.  ALLOW-FROM allows specific websites to frame the web page in supported web browsers).</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true</p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="blue" height="24">
+<td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><a name="info"></a>Informational (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">X-Frame-Options header not set</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Scripts/jquery-1.10.2.min.js</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.  ALLOW-FROM allows specific websites to frame the web page in supported web browsers).</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true</p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="blue" height="24">
+<td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><a name="info"></a>Informational (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">X-Frame-Options header not set</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Scripts/jquery.validate.min.js</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.  ALLOW-FROM allows specific websites to frame the web page in supported web browsers).</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true</p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="blue" height="24">
+<td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><a name="info"></a>Informational (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">X-Frame-Options header not set</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Scripts/jquery.validate.unobtrusive.min.js</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.  ALLOW-FROM allows specific websites to frame the web page in supported web browsers).</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true</p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="blue" height="24">
+<td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><a name="info"></a>Informational (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">X-Frame-Options header not set</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Scripts/bootstrap.min.js</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.  ALLOW-FROM allows specific websites to frame the web page in supported web browsers).</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true</p>
+</font></td>
+</tr>
+
+</table>
+<p></p>
+<table width="100%" border="0">
+  
+  
+<tr bgcolor="blue" height="24">
+<td width="20%" valign="top"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><a name="info"></a>Informational (Warning)</font></strong></td><td width="80%"><strong><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">X-Frame-Options header not set</font></strong></td>
+</tr>
+  
+  
+  
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Description</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">X-Frame-Options header is not included in the HTTP response to protect against 'ClickJacking' attacks</p>
+</font></td>
+</tr>
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%">
+<blockquote>
+<font size="2" face="Arial, Helvetica, sans-serif">URL</font>
+</blockquote>
+</td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">http://localhost:52842/Errors?aspxerrorpath=/</font></td>
+</tr>
+  
+  
+  
+<TR vAlign="top">
+<TD colspan="2"></TD>
+</TR>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Solution</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it's set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY.  ALLOW-FROM allows specific websites to frame the web page in supported web browsers).</p>
+</font></td>
+</tr>
+  
+<tr bgcolor="#e8e8e8" valign="top">
+<td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p>Reference</p>
+</font></td><td width="80%"><font size="2" face="Arial, Helvetica, sans-serif">
+<p align="justify">http://blogs.msdn.com/b/ieinternals/archive/2010/03/30/combating-clickjacking-with-x-frame-options.aspx?Redirected=true</p>
+</font></td>
+</tr>
+
+</table>
+</body>
+</html>
